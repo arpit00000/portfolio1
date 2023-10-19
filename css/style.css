@@ -294,33 +294,50 @@ color: #0D0F16;
 }
 
 /* services */
-.service img{
-    width: 3.5rem;
-    padding-bottom: 2rem;
+#services{
+    padding: 30px 0;
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 48px;
+    margin-top: 50px;
+
+}
+.services-list div{
+    background-color: #efd4c4;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    
+}
+ .services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px; 
+ }
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
 }
 
-.services{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-   
-}
-.service-section{
-   max-width: 300px;
-   padding: 2rem;
-   border-radius: 10px;
-    background-color: white;
-   border: 1px solid rgba(242, 108, 79, 0.1);
-   margin: 4rem;
-   transition: 500ms;
-   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+.services-list div:hover{
+    background: #f78534c2;
+    transform: translateY(-10px);
 }
 
-.service-section:hover{
-    max-width: 350px;
-    margin: 1rem;
-    padding: 3rem;
-}
 
 /*  skills section  */
 .items{
